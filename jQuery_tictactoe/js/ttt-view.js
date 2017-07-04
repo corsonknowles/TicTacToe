@@ -29,7 +29,7 @@ class View {
 
     if (this.game.isOver()) {
       if (this.game.winner()) {
-        $("p").text(`Congratulations ${this.game.currentPlayer.toUpperCase()}. You win!`);
+        $("p").text(`Congratulations ${this.game.winner.toUpperCase()}. You win!`);
       } else {
         $("p").text("Cat's game!");
       }
